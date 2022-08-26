@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Bungee&family=Unica+One&display=swap');
+
+:root{
+    --a:
+    --b:font-family: 'Bungee', cursive;
+    --c:font-family: 'Unica One', cursive;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+body{
+    background-color: #313131;
+    color: orange;
+}
+
+header{
+    position: fixed;
+    top: 0;
+}
+
+main{
+    margin-top: 3rem;
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
