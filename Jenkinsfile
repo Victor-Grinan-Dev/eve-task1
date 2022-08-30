@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    tools {nodejs "null"}
+    tools {nodejs null}
     
     stages {
         stage('Build') {
