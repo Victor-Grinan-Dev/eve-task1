@@ -4,4 +4,6 @@
 - choose github, continue
 - select a repo
 - branch master/main, next, next
-- save and depl0y
+- save and deploy
+
+- Something added
