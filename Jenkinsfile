@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    tools {nodejs "node"}
+    tools {nodejs "null"}
     
     stages {
         stage('Build') {
@@ -16,13 +16,13 @@ pipeline {
             }
         }
          stage('Deliver') {
-                            steps {
-                                sh "chmod +x ./scripts/deliver.sh"
-                                sh './scripts/deliver.sh'
-                                input message: 'Finished using the Rat-in-maze app? (Click "Proceed" to continue)'
-                                sh "chmod +x ./scripts/kill.sh"
-                                sh './scripts/kill.sh'
-                            }
-                        }
+            steps {
+                sh "chmod +x ./scripts/deliver.sh"
+                sh './scripts/deliver.sh'
+                input message: 'Finished using the Rat-in-maze app? (Click "Proceed" to continue)'
+                sh "chmod +x ./scripts/kill.sh"
+                sh './scripts/kill.sh'
             }
-      }
+        }
+    }
+}
